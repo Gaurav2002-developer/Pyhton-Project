@@ -1,6 +1,8 @@
-time=int(input("Enter the time:"))
+import time
+t=time.strftime('%H:%M:%S')
+time=int(time.strftime('%H'))
 
-
+#time=int(input("Enter the time:"))
 if(time>= 0 and time<12):
   print(time, "am")
 else:
