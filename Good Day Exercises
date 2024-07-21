@@ -1,0 +1,16 @@
+time=int(input("Enter the time:"))
+
+
+if(time>= 0 and time<12):
+  print(time, "am")
+else:
+  print(time,"pm")
+
+if(time>0 and time<12):
+  print("Good morning Sir , its",time, "am and we hope you have great morning")
+elif(time>=12 and time<17):
+  print("Good afternoon Sir its",time, "pm and we hope you have enthusuastic afternoon")
+elif(time>=17 and time<21):
+  print("Good evening Sir its",time, "pm and we hope you have amazing evening")
+else:
+  print("Good night sir, the day has been ended and we hope you have spent a great day")
