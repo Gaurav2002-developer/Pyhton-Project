@@ -1,0 +1,13 @@
+name=input("Enter your name:")
+print("Hello", name, "Welcome to KBC")
+print("Here is your first question")
+#question=["What is the capital of India?"]
+print("What is the capital of India?")
+answers=["Delhi","Islamabad","Dhaka","Kathmandu"]
+print(answers)
+answer=input("Enter your amswer:")
+if (answer==answers[0]):
+  print(answer,"is the correct answer")
+  print("Congaratulation",name,"you have won rs.10000")
+else:
+  print("Sorry" ,name, "you lost the game")
