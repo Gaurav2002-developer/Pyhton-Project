@@ -1,0 +1,34 @@
+#list of items to be sgown on menu
+menu={'Burger':200,
+      'Pizza':300,
+      'French fries':100,
+      'Coke':50}
+#Welcomwing the customer
+name=input("Enter your name:")
+print("Hello",name," welcome to Gaurav's Restaurant")
+print("Here is the menu-")
+print("Burger=:200\nPizza=:300\nFrench fries=:100\nCoke=:50")
+print("What do you want order",name,"?")
+
+order_total= 0
+
+#taking order from customer
+item_1=input("Enter the item :")
+if item_1 in menu:
+   order_total += menu[item_1]
+   print(f"Your item {item_1} is added to your cart")
+else:
+  print(name,"Your order is not availaible")
+
+
+item_2=input("Do you want to order something else ? (Yes/No):")
+if item_2=="Yes":
+   another_order=input("Enter your order:")
+   if another_order in menu:
+    order_total += menu[another_order]
+    print(f"Your {another_order} has been added to your order")
+   else:
+    print(name,"your order is not available")
+    
+
+print(f"{name} your toatal amount of your order is: {order_total}")
