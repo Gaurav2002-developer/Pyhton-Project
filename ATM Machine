@@ -1,0 +1,57 @@
+import time
+Option=[1 == "Check balance",
+       2 == "Withdraw",
+       3 == "Deposit",
+       4 == "Exit"]
+
+print("Plaese insert your card")
+
+time.sleep(1)
+
+password=6789
+
+balance=7214
+
+pin=int(input("Enter your pin:"))
+
+  
+if (pin == password):
+  print("""
+  1 == Check balance
+  2 == Withdraw
+  3 == Deposit
+  4 == Exit
+  """)
+
+  try:
+    Option=int(input("Enter your choice:"))
+  except:
+    print("Invalid Option")
+
+  if (Option == 1):
+   print(f"Your Balance is {balance}")
+
+  elif (Option == 2):
+   withdraw=int(input("Enter the withdraw amount:"))
+  
+   if (withdraw> balance):
+    print("Insufficient Balance")
+  
+   else:
+    balance=balance-withdraw
+    print(f"Please Collect your Cash Rs.{withdraw}")
+    print(f"Your updated balance is {balance}")
+
+  elif (Option == 3):
+   deposit=int(input("Enter the Deposit amount:"))
+   balance=balance+deposit
+   print(f"Your updated balance is {balance}")
+   print(f"{deposit} amount is bieng creditied to your account")
+   print(f"Please Collect your of Recipt Rs.{deposit}")
+    
+  elif (Option == 4):
+   # break
+
+   print("Thank you for using our ATM")
+else:
+     print("Your pin is wrong")
