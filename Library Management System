@@ -1,0 +1,20 @@
+#Create an  Librarry using class and  instance
+class Library:
+  def __init__(self):
+    self.nobook=0
+    self.books=[]
+
+  def addbook(self,book):
+   self.books.append(book)
+   self.nobook=len(self.books)
+
+  def show(self,book):
+    print(f"The library has {self.nobook} books. The books are:")
+    for book in self.books:
+      print(book)
+
+a=Library()
+a.addbook("Harry Potter")
+a.addbook("Sherlock Holmes")
+a.addbook("Wiliam Shakespeare")
+a.show(a.books)
