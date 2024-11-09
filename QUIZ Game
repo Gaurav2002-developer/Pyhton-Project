@@ -2,7 +2,7 @@ print("Welcome  to the  Game !")
 
 interest=input("Do you  want to play? ")
 
-if interest != "yes":
+if interest.lower() != "yes":
 
     print("Thanks for showing your interest in the game, you can leave !")
     exit()
@@ -11,7 +11,7 @@ print('You can continue to play ')
 
 ques=input("What is the capital of India ? ")
 
-if ques == 'Delhi':
+if ques.lower() == 'delhi':
     print('You are Right ')
 else:
     print('You are Wrong ')
@@ -19,7 +19,7 @@ else:
 
 ques=input("What is the capital of Rajasthan ? ")
 
-if ques == 'Jaipur':
+if ques.lower() == 'jaipur':
     print('You are Right ')
 else:
     print('You are Wrong ')
@@ -27,7 +27,7 @@ else:
 
 ques=input("What is the capital of Bihar ? ")
 
-if ques == 'Patna':
+if ques.lower() == 'patna':
     print('You are Right ')
 else:
     print('You are Wrong ')
